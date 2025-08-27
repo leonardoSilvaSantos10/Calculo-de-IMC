@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75,100;1,75,100&display=swap');
+
+:root {
+    --cor-primaria: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vw;
+    overflow: hidden;
+    background-image: url('../assets/medico.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* garante altura da tela inteira */
+    margin: 0;
+    /* remove margens do body */
+}
+
+i .container__filho {
+    width: 100%;
+}
+
+.logo__nutriz {
+    max-width: 100%;
+    transition: transform 1.5s ease;
+}
+
+.logo__nutriz:hover {
+    transform: scale(1.2);
+}
+
+.container__conteudo__filho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    /**/
+    gap: 9em;
+}
+
+
+.container__conteudo {
+    font-family: "Roboto", sans-serif;
+    color: var(--cor-primaria);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    gap: 1em;
+    width: 30%;
+    /*tamanho da faixa escura*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tamanho__elemento__tela {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    outline: none;
+    box-shadow: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.tamanho__elemento__tela__dois {
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--cor-primaria);
+    font-family: "Montserrat", sans-serif;
+    transition: transform 1.5s ease;
+}
+
+.tamanho__elemento__tela__dois:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.2);
+}
+
+#inputSenha::placeholder {
+    color: #888;
+}
+
+.container__filho {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}

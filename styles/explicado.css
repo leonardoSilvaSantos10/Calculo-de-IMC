@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,500;1,500&display=swap'); /* Importa as fontes Inter e Roboto do Google Fonts */
+
+* {
+    margin: 0;        /* Remove as margens padrão de todos os elementos */
+    padding: 0;       /* Remove o preenchimento (espaço interno) padrão de todos os elementos */
+}
+
+body {
+    background-image: url('medico.avif');  /* Coloca uma imagem de fundo na tela */
+    background-size: cover;                /* Faz a imagem cobrir toda a tela, sem distorcer */
+    box-sizing: border-box;                /* Faz o tamanho do elemento incluir a borda e o padding */
+}
+
+button {
+    background-color: white;  /* Fundo branco nos botões */
+    color: black;             /* Texto preto nos botões */
+}
+
+.titulo {
+    text-align: center;                      /* Centraliza o texto */
+    font-family: "Roboto", sans-serif;       /* Usa a fonte Roboto */
+    margin-top: 8%;                          /* Dá um espaço acima do título */
+}
+
+.meuCabecalho {
+    text-align: center;   /* Centraliza o texto */
+    margin-top: 4%;       /* Espaço acima do cabeçalho */
+}
+
+.meuCabecalho__conteudo {
+    font-family: "Inter", sans-serif;  /* Usa a fonte Inter */
+}
+
+input {
+    background-color: white;  /* Fundo branco no input */
+    color: black;             /* Texto preto no input */
+}
+
+.tabela_inteira {
+    margin-top: -25%;  /* Sobe a tabela na tela (pode sair do lugar normal) */
+}
+
+.tabela__conteudo {
+    margin-top: -10%;                        /* Sobe um pouco a tabela */
+    border-radius: 1px;                      /* Cantos levemente arredondados */
+    background-color: white;                 /* Fundo branco */
+    margin: 0 auto;                          /* Centraliza a tabela na horizontal */
+    margin-top: 30%;                         /* Dá espaço acima da tabela */
+    border-collapse: collapse;               /* Junta as bordas da tabela */
+    border: 1px solid black;                 /* Borda preta ao redor da tabela */
+    width: 300px;                            /* Largura da tabela de 300 pixels */
+}
+
+.tabela__titulo {
+    background-color: white;     /* Fundo branco no título da tabela */
+    border: 1px solid black;     /* Borda preta ao redor */
+}
+
+td {
+    border: 1px solid black;     /* Borda preta em cada célula da tabela */
+}
+
+#Mensagem {
+    background-color: rgb(199, 230, 231);     /* Cor de fundo azul clara */
+    border-radius: 16px;                      /* Cantos arredondados */
+    font-family: "Inter", sans-serif;         /* Usa a fonte Inter */
+    display: inline-block;                    /* Permite tratar como bloco, mas se ajusta ao conteúdo */
+    margin-left: 42%;                         /* Espaço à esquerda (empurra pra direita) */
+    text-align: center;                       /* Centraliza o texto dentro */
+    margin-top: 2%;                           /* Espaço acima */
+    font-size: 15px;                          /* Tamanho da letra */
+}
+
+.container { /*pai*/
+    display: flex;                /* Ativa o modo flexbox (organização flexível) */
+    margin-top: 2%;              /* Espaço acima */
+    flex-direction: column-reverse; /* Inverte a ordem dos filhos (último vai pra cima) */
+    align-items: center;         /* Centraliza os itens na horizontal */
+}
+
+.botaosaibamais {
+    background-color: rgb(199, 230, 231); /* Cor de fundo azul clara */
+    color: rgb(6, 11, 11);                /* Cor do texto quase preta */
+    border-radius: 20px;                  /* Cantos bem arredondados */
+    padding: 5px;                         /* Espaço interno */
+    text-decoration: none;               /* Remove o sublinhado (caso seja link) */
+    width: 6%;                            /* Largura de 6% da tela */
+    margin-top: 1%;                      /* Espaço acima */
+    text-align: center;                  /* Centraliza o texto dentro */
+    justify-content: center;            /* (Não tem efeito aqui, só funciona em display flex) */
+}
+
+.informacao {
+    font-family: "Roboto", sans-serif;  /* Usa a fonte Roboto */
+    justify-content: center;            /* (Não tem efeito aqui também, só funciona em display flex) */
+}
