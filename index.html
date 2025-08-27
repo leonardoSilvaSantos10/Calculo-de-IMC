@@ -4,76 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcula IMC</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Login IMC</title>
+    <link rel="stylesheet" href="./styles/style.login.css">
 </head>
 
 <body>
-
-
-    <div class="container__pai">
-        <div class="container__titulo">
-            <h1 class="titulo">Seu Índice de Massa Corporal</h1>
+    <section class="container__conteudo">
+        <div class="container__conteudo__filho">
+            <div class="container__filho">
+                <h3>Login</h3>
+            </div>
+            <a href="https://www.nutriz.com.br/">
+                <img class="logo__nutriz" src="./assets/logo_nutriz.png">
+            </a>
+            
         </div>
 
-        <div class="container__mensagem">
-            <p id="Mensagem"></p>
-        </div>
-    </div>
-
-    <div class="meuCabecalho">
-        <div class="meuCabecalho__filho">
-            <div>
-                <input class="transparente" type="number" placeholder="Digite sua altura aqui" id="inputAltura" />
+        <div class="container__conteudo__filho__dois">
+            <div class="container__filho">
+                <input class="tamanho__elemento__tela" id="inputSenha" placeholder="Senha">
+                <button class="tamanho__elemento__tela__dois" onclick="verificaSenha()">Entrar</button>
             </div>
         </div>
-
-        <div class="meuCabecalho__filho">
-            <div>
-                <input class="transparente" type="number" placeholder="Digite seu peso aqui" id="inputPeso" />
+        
+        <div>
+            <div class="container__filho">
+                <p id="texto"></p>
             </div>
-            <button class="meuCabecalho__conteudo" onclick="calculaImc()">calcula IMC</button>
         </div>
-    </div>
+    </section>
 
-
-
-    <div class="tabela_inteira">
-        <table class="tabela__conteudo">
-            <caption class="tabela__titulo">Classificação IMC</caption>
-            <tr>
-                <td>Menor que 18,5</td>
-                <td>Magreza</td>
-            </tr>
-            <tr>
-                <td>18,5 a 24,9</td>
-                <td>Normal</td>
-            </tr>
-            <tr>
-                <td>25 a 29,9</td>
-                <td>Sobrepeso</td>
-            </tr>
-            <tr>
-                <td>30 a 34,9</td>
-                <td>Obesidade grau I</td>
-            </tr>
-            <tr>
-                <td>35 a 39,9</td>
-                <td>Obesidade grau II</td>
-            </tr>
-            <tr>
-                <td>Maior que 40</td>
-                <td>Obesidade grau III</td>
-            </tr>
-        </table>
-    </div>
-    <div class="container">
-        <a class="botaosaibamais"
-            href="https://brasilescola.uol.com.br/educacao-fisica/Indice-massa-corporal-imc.htm">Saiba mais</a>
-        <p class="informacao">Quer entender melhor o que é IMC? Clique em 'Saiba mais'!</p>
-    </div>
-
-    <script src="./js/imc-tela.js"></script>
+    <script src="./js/login-imc.js.js"></script>
 
 </body>
 

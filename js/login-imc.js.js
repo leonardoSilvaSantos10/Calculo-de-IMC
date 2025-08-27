@@ -12,6 +12,6 @@ function verificaSenha() {
         document.getElementById("texto").textContent = "A senha deve conter ao menos 1 caractere especial!";
     } else {
         document.getElementById("texto").textContent = "Senha válida";
-        window.location.href = "index.html";
+        window.location.href = "tela-logado.html";
     }
 }
